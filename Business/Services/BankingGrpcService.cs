@@ -1,8 +1,8 @@
 using Grpc.Core;
-using BankingSystem.Core.Interfaces;
-using BankingSystem.Core.DTOs;
+using Guia03.Core.Interfaces;
+using Guia03TOs;
 
-namespace BankingSystem.gRPC.Services
+namespace Guia03ervices
 {
     public class BankingGrpcService : Banking.BankingBase
     {

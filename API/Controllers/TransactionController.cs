@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using BankingSystem.Core.Interfaces;
-using BankingSystem.Core.DTOs;
+using Guia03.Core.Interfaces;
+using Guia03TOs;
 
-namespace BankingSystem.API.Controllers
+namespace Guia03ntrollers
 {
     [ApiController]
     [Route("api/[controller]")]

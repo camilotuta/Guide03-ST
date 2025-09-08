@@ -6,11 +6,11 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BankingSystem.Core.DTOs;
-using BankingSystem.Core.Interfaces;
-using BankingSystem.Core.Models;
+using Guia03.Core.DTOs;
+using Guia03nterfaces;
+using Guia03odels;
 
-namespace BankingSystem.WinForms
+namespace Guia03ms
 {
     public partial class MainForm : Form
     {

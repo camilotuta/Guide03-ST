@@ -3,13 +3,13 @@ using Xunit;
 using Moq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using BankingSystem.Data;
-using BankingSystem.Data.Repositories;
-using BankingSystem.Business.Services;
-using BankingSystem.Core.Models;
-using BankingSystem.Core.DTOs;
+using Guia03.Data;
+using Guia03epositories;
+using Guia03ss.Services;
+using Guia03odels;
+using Guia03TOs;
 
-namespace BankingSystem.Tests.Services
+namespace Guia03Services
 {
     public class TransactionServiceTests : IDisposable
     {

@@ -2,9 +2,9 @@
 
 // BankingGrpcClient.cs
 using Grpc.Net.Client;
-using BankingSystem.gRPC;
+using Guia03.gRPC;
 
-namespace BankingSystem.WinForms
+namespace Guia03ms
 {
     public class BankingGrpcClient
     {

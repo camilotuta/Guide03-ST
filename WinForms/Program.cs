@@ -4,12 +4,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
-using BankingSystem.Data;
-using BankingSystem.Data.Repositories;
-using BankingSystem.Business.Services;
-using BankingSystem.Core.Interfaces;
+using Guia03.Data;
+using Guia03epositories;
+using Guia03ss.Services;
+using Guia03nterfaces;
 
-namespace BankingSystem.WinForms
+namespace Guia03ms
 {
     static class Program
     {
