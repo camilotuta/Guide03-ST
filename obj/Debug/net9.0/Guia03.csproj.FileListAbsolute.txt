@@ -1,0 +1,4 @@
+C:\Users\tutaa\Workspace\C#\College\Transaccionales\Guia03\obj\Debug\net9.0\Guia03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tutaa\Workspace\C#\College\Transaccionales\Guia03\obj\Debug\net9.0\Guia03.AssemblyInfoInputs.cache
+C:\Users\tutaa\Workspace\C#\College\Transaccionales\Guia03\obj\Debug\net9.0\Guia03.AssemblyInfo.cs
+C:\Users\tutaa\Workspace\C#\College\Transaccionales\Guia03\obj\Debug\net9.0\Guia03.csproj.CoreCompileInputs.cache

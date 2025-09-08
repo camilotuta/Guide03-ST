@@ -1,0 +1,83 @@
+syntax = "proto3";
+
+option csharp_namespace = "Guia03.gRPC";
+
+package banking;
+
+service Banking {
+  rpc ProcessTransfer (TransferRequest) returns (TransferResponse);
+  rpc ProcessDeposit (DepositRequest) returns (DepositResponse);
+  rpc ProcessWithdrawal (WithdrawalRequest) returns (WithdrawalResponse);
+  rpc GetBalance (BalanceRequest) returns (BalanceResponse);
+  rpc GetTransactionHistory (TransactionHistoryRequest) returns (TransactionHistoryResponse);
+}
+
+message TransferRequest {
+  int32 from_account_id = 1;
+  int32 to_account_id = 2;
+  double amount = 3;
+  string description = 4;
+}
+
+message TransferResponse {
+  bool success = 1;
+  string transaction_id = 2;
+  string message = 3;
+  double new_balance = 4;
+}
+
+message DepositRequest {
+  int32 account_id = 1;
+  double amount = 2;
+  string description = 3;
+}
+
+message DepositResponse {
+  bool success = 1;
+  string transaction_id = 2;
+  string message = 3;
+  double new_balance = 4;
+}
+
+message WithdrawalRequest {
+  int32 account_id = 1;
+  double amount = 2;
+  string description = 3;
+}
+
+message WithdrawalResponse {
+  bool success = 1;
+  string transaction_id = 2;
+  string message = 3;
+  double new_balance = 4;
+}
+
+message BalanceRequest {
+  int32 account_id = 1;
+}
+
+message BalanceResponse {
+  bool success = 1;
+  double balance = 2;
+  string account_number = 3;
+  string account_type = 4;
+}
+
+message TransactionHistoryRequest {
+  int32 account_id = 1;
+  int32 limit = 2;
+}
+
+message TransactionHistoryResponse {
+  bool success = 1;
+  repeated TransactionItem transactions = 2;
+}
+
+message TransactionItem {
+  string transaction_id = 1;
+  string transaction_type = 2;
+  double amount = 3;
+  string description = 4;
+  string transaction_date = 5;
+  string status = 6;
+}
